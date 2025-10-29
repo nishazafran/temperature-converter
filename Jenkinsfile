@@ -35,7 +35,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building version ${APP_VERSION} for ${params.ENVIRONMENT} environment"
-                echo "Built by student: ${params.STUDENT_NAME}"   // ✅ This line will show your name
+                echo "Built by student: ${params.STUDENT_NAME}"  
                 sh '''
                     echo "Simulating build process..."
                     mkdir -p build
